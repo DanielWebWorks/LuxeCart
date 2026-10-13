@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your LuxeCart order.">
+    <title>Checkout — LuxeCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over $100
+        <span>·</span>
+        Discover the new season
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUXE<span>CART.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Shop</a>
+                <a href="index.html#categories" class="nav-link">Categories</a>
+                <a href="index.html#deals" class="nav-link">New Arrivals</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="products.html" class="header-icon" aria-label="Search">⌕</a>
+                <a href="login.html" class="header-icon" aria-label="My account">♙</a>
+                <a href="account.html#wishlist" class="header-icon" aria-label="Wishlist">♡</a>
+                <a href="cart.html" class="header-icon cart-link" aria-label="Shopping cart">♧ <span class="cart-count"
+                        id="cartCount">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+            <div class="container">
+                <div class="checkout-heading">
+                    <span class="section-eyebrow">ALMOST YOURS</span>
+                    <h1>Complete your <em>order.</em></h1>
+                    <p>Review your details and prepare your LuxeCart order.</p>
+                </div>
+
+                <div id="checkoutMessage" class="checkout-message" aria-live="polite"></div>
+
+                <div class="checkout-layout">
+                    <form class="checkout-form" id="checkoutForm">
+                        <section class="checkout-form-section">
+                            <h2>01. Contact information</h2>
+
+                            <label for="checkoutEmail">Email address</label>
+                            <input type="email" id="checkoutEmail" name="email" placeholder="you@example.com" required>
+                        </section>
+
+                        <section class="checkout-form-section">
+                            <h2>02. Delivery address</h2>
+
+                            <div class="checkout-fields-two">
+                                <div>
+                                    <label for="checkoutFirstName">First name</label>
+                                    <input type="text" id="checkoutFirstName" name="firstName" required>
+                                </div>
+
+                                <div>
+                                    <label for="checkoutLastName">Last name</label>
+                                    <input type="text" id="checkoutLastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <label for="checkoutAddress">Street address</label>
+                            <input type="text" id="checkoutAddress" name="address" placeholder="House number and street"
+                                required>
+
+                            <div class="checkout-fields-two">
+                                <div>
+                                    <label for="checkoutCity">City</label>
+                                    <input type="text" id="checkoutCity" name="city" required>
+                                </div>
+
+                                <div>
+                                    <label for="checkoutPostal">Postal code</label>
+                                    <input type="text" id="checkoutPostal" name="postalCode" required>
+                                </div>
+                            </div>
+
+                            <label for="checkoutCountry">Country</label>
+                            <select id="checkoutCountry" name="country" required>
+                                <option value="">Select your country</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </section>
+
+                        <section class="checkout-form-section">
+                            <h2>03. Payment method</h2>
+                            <p class="checkout-demo-note">
+                                This portfolio demo does not process real payments.
+                            </p>
+
+                            <label class="checkout-payment-option">
+                                <input type="radio" name="payment" value="demo-card" checked>
+                                <span>Credit or debit card <small>Demo selection only</small></span>
+                            </label>
+
+                            <label class="checkout-payment-option">
+                                <input type="radio" name="payment" value="cash">
+                                <span>Cash on delivery <small>Demo selection only</small></span>
+                            </label>
+                        </section>
+
+                        <button type="submit" class="checkout-place-order">
+                            Place demo order →
+                        </button>
+
+                        <p class="checkout-secure-note">
+                            Demo checkout · No payment details required
+                        </p>
+                    </form>
+
+                    <aside class="checkout-order-summary" id="checkoutOrderSummary">
+                        <!-- Order summary will be rendered here -->
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 LuxeCart. All rights reserved.</p>
+                <p>Curated with care. Designed for everyday living.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

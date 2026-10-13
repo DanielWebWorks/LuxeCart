@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium fashion, technology, beauty, and home essentials at LuxeCart.">
+    <title>LuxeCart — Curated for Modern Living</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+    Complimentary shipping on orders over $100
+    <span>·</span>
+    Discover the new season
+</div>
+
+<!-- Main Header -->
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            LUXE<span>CART.</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="products.html" class="nav-link">Shop</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#deals" class="nav-link">New Arrivals</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="products.html" class="header-icon" aria-label="Search">
+                ⌕
+            </a>
+            <a href="account.html" aria-label="My account">♙</a>
+            <a href="account.html#wishlist" aria-label="My wishlist">♡</a>
+            <a href="account.html#wishlist" class="header-icon" aria-label="Wishlist">
+                ♡
+            </a>
+            <a href="cart.html" class="header-icon cart-link" aria-label="Shopping cart">
+                ♧ <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<!-- Main page content will go here in our next steps -->
+
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-inner">
+
+            <div class="hero-content">
+                <span class="hero-eyebrow">
+                    THE NEW SEASON COLLECTION
+                </span>
+
+                <h1>
+                    Everyday essentials.<br>
+                    <span>Extraordinary style.</span>
+                </h1>
+
+                <p>
+                    Discover thoughtfully selected fashion, accessories,
+                    beauty, and home essentials designed for modern living.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="products.html" class="btn btn-primary">
+                        Explore Collection <span>→</span>
+                    </a>
+
+                    <a href="#categories" class="hero-secondary-link">
+                        Discover our world
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <span>✦ Carefully curated</span>
+                    <span>✦ Quality essentials</span>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85"
+                    alt="Elegant fashion editorial from the LuxeCart collection">
+
+                <div class="hero-image-label">
+                    <span>CURATED FOR YOU</span>
+                    <strong>Style that feels like you.</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Shop by Category -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-eyebrow">EXPLORE LUXECART</span>
+                    <h2>Find your <em>everyday favorites.</em></h2>
+                </div>
+
+                <a href="products.html" class="section-link">
+                    View all categories <span>→</span>
+                </a>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="products.html?category=fashion" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=85"
+                        alt="Fashion clothing and seasonal style" loading="lazy">
+                    <div class="category-overlay">
+                        <span>01 / STYLE</span>
+                        <h3>Fashion</h3>
+                        <span class="category-explore">Explore collection ↗</span>
+                    </div>
+                </a>
+
+                <a href="products.html?category=technology" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=85"
+                        alt="Premium headphones and technology accessories" loading="lazy">
+                    <div class="category-overlay">
+                        <span>02 / INNOVATION</span>
+                        <h3>Technology</h3>
+                        <span class="category-explore">Explore collection ↗</span>
+                    </div>
+                </a>
+
+                <a href="products.html?category=home" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=85"
+                        alt="Warm contemporary home interior and decor" loading="lazy">
+                    <div class="category-overlay">
+                        <span>03 / LIVING</span>
+                        <h3>Home &amp; Living</h3>
+                        <span class="category-explore">Explore collection ↗</span>
+                    </div>
+                </a>
+
+                <a href="products.html?category=beauty" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85"
+                        alt="Skincare products and beauty essentials" loading="lazy">
+                    <div class="category-overlay">
+                        <span>04 / SELF CARE</span>
+                        <h3>Beauty</h3>
+                        <span class="category-explore">Explore collection ↗</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="featured-section" id="deals">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-eyebrow">THE LUXECART EDIT</span>
+                    <h2>Considered <em>favorites.</em></h2>
+                </div>
+
+                <a href="products.html" class="section-link">
+                    Shop all products <span>→</span>
+                </a>
+            </div>
+
+            <div class="product-grid">
+
+                <!-- Product 1 -->
+                <article class="product-card" data-product-id="watch">
+                    <div class="product-image">
+                        <a href="product.html?id=watch" class="product-image-link">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85"
+                                alt="Minimalist wristwatch with a premium design" loading="lazy">
+                        </a>
+                        <span class="product-badge">BESTSELLER</span>
+                        <button class="wishlist-btn" data-wishlist="watch"
+                            aria-label="Add Minimalist Watch to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ACCESSORIES</span>
+                        <h3><a href="product.html?id=watch">The Minimalist Watch</a></h3>
+                        <div class="product-rating">★★★★★ <span>(124)</span></div>
+                        <div class="product-bottom">
+                            <span class="product-price">$129.00</span>
+                            <button class="add-cart-btn" data-add-cart="watch"
+                                aria-label="Add Minimalist Watch to cart">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-product-id="headphones">
+                    <div class="product-image">
+                        <a href="product.html?id=headphones" class="product-image-link">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85"
+                                alt="Premium wireless headphones" loading="lazy">
+                        </a>
+                        <span class="product-badge">EDITOR'S PICK</span>
+                        <button class="wishlist-btn" data-wishlist="headphones"
+                            aria-label="Add Wireless Headphones to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">TECHNOLOGY</span>
+                        <h3><a href="product.html?id=headphones">Wireless Headphones</a></h3>
+                        <div class="product-rating">★★★★★ <span>(98)</span></div>
+                        <div class="product-bottom">
+                            <span class="product-price">$89.00</span>
+                            <button class="add-cart-btn" data-add-cart="headphones"
+                                aria-label="Add Wireless Headphones to cart">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-product-id="bag">
+                    <div class="product-image">
+                        <a href="product.html?id=bag" class="product-image-link">
+                            <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=85"
+                                alt="Elegant leather handbag" loading="lazy">
+                        </a>
+                        <span class="product-badge">NEW ARRIVAL</span>
+                        <button class="wishlist-btn" data-wishlist="bag"
+                            aria-label="Add Everyday Leather Bag to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">FASHION</span>
+                        <h3><a href="product.html?id=bag">Everyday Leather Bag</a></h3>
+                        <div class="product-rating">★★★★★ <span>(76)</span></div>
+                        <div class="product-bottom">
+                            <span class="product-price">$159.00</span>
+                            <button class="add-cart-btn" data-add-cart="bag"
+                                aria-label="Add Everyday Leather Bag to cart">+</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-product-id="skincare">
+                    <div class="product-image">
+                        <a href="product.html?id=skincare" class="product-image-link">
+                            <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=85"
+                                alt="Premium skincare and beauty products" loading="lazy">
+                        </a>
+                        <span class="product-badge">CUSTOMER LOVE</span>
+                        <button class="wishlist-btn" data-wishlist="skincare"
+                            aria-label="Add Daily Skincare Set to wishlist">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">BEAUTY</span>
+                        <h3><a href="product.html?id=skincare">Daily Skincare Set</a></h3>
+                        <div class="product-rating">★★★★★ <span>(112)</span></div>
+                        <div class="product-bottom">
+                            <span class="product-price">$64.00</span>
+                            <button class="add-cart-btn" data-add-cart="skincare"
+                                aria-label="Add Daily Skincare Set to cart">+</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Promotional Banner -->
+    <section class="promo-section">
+        <div class="container">
+            <div class="promo-banner">
+
+                <div class="promo-content">
+                    <span class="promo-eyebrow">THE ART OF GIVING</span>
+
+                    <h2>Little luxuries.<br><em>Lasting impressions.</em></h2>
+
+                    <p>
+                        Thoughtfully chosen pieces for yourself and the people
+                        who make life special.
+                    </p>
+
+                    <a href="products.html" class="promo-button">
+                        Discover the collection <span>→</span>
+                    </a>
+                </div>
+
+                <div class="promo-image">
+                    <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=85"
+                        alt="Beautifully styled home accessories and curated gifts" loading="lazy">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <div class="container newsletter-inner">
+
+        <div class="newsletter-content">
+            <span class="section-eyebrow">A LITTLE SOMETHING EXTRA</span>
+            <h2>Good things, <em>delivered.</em></h2>
+            <p>
+                Join our community for new arrivals, thoughtful edits,
+                and 10% off your first order.
+            </p>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+            <label for="newsletterEmail">Your email address</label>
+            <div class="newsletter-input-row">
+                <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+                <button type="submit">Join us →</button>
+            </div>
+            <p class="newsletter-message" id="newsletterMessage" aria-live="polite"></p>
+        </form>
+
+    </div>
+</section>
+
+<!-- Site Footer -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    LUXE<span>CART.</span>
+                </a>
+                <p>
+                    Thoughtfully curated essentials for the way you live,
+                    dress, and express yourself.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">IG</a>
+                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Pinterest">PI</a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">FB</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop all</a>
+                <a href="#categories">Categories</a>
+                <a href="#deals">New arrivals</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>YOUR ACCOUNT</h3>
+                <a href="login.html">Sign in</a>
+                <a href="account.html">My account</a>
+                <a href="account.html#wishlist">Wishlist</a>
+                <a href="cart.html">Shopping cart</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>WE'RE HERE TO HELP</h3>
+                <a href="contact.html">Contact us</a>
+                <a href="contact.html">Shipping information</a>
+                <a href="contact.html">Returns &amp; exchanges</a>
+                <a href="contact.html">Frequently asked questions</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 LuxeCart. All rights reserved.</p>
+            <p>Curated with care. Designed for everyday living.</p>
+        </div>
+
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+</html>

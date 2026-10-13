@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your LuxeCart customer account.">
+    <title>Create Account | LuxeCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over $100
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#new-arrivals">New Arrivals</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" aria-label="Account">♙</a>
+                <a href="cart.html" aria-label="Shopping cart">
+                    ♧ <span id="cartCount">0</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation"
+                aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <main class="auth-section">
+        <div class="auth-card">
+            <a href="index.html" class="auth-back-link">← Back to shopping</a>
+
+            <p class="section-eyebrow">JOIN LUXECART</p>
+            <h1>Create your <em>account.</em></h1>
+            <p class="auth-description">
+                Join us and keep your favorite finds close.
+            </p>
+
+            <div id="signupMessage" class="auth-message" aria-live="polite"></div>
+
+            <form id="signupForm">
+                <div class="auth-field">
+                    <label for="signupName">Full name</label>
+                    <input type="text" id="signupName" name="name" placeholder="Your full name" autocomplete="name"
+                        required>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signupEmail">Email address</label>
+                    <input type="email" id="signupEmail" name="email" placeholder="you@example.com" autocomplete="email"
+                        required>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signupPassword">Create password</label>
+                    <input type="password" id="signupPassword" name="password" placeholder="At least 8 characters"
+                        autocomplete="new-password" minlength="8" required>
+                </div>
+
+                <div class="auth-field">
+                    <label for="signupConfirmPassword">Confirm password</label>
+                    <input type="password" id="signupConfirmPassword" name="confirmPassword"
+                        placeholder="Enter your password again" autocomplete="new-password" minlength="8" required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">
+                    Create Account →
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Sign in</a>
+            </p>
+
+            <p class="auth-demo-note">
+                Frontend demo only. Do not enter a real or reused password.
+                No secure account service is connected.
+            </p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+            <p>© 2026 LuxeCart. A shopping experience demo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

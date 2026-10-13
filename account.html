@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your LuxeCart customer profile and wishlist.">
+    <title>My Account | LuxeCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over $100
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#new-arrivals">New Arrivals</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="account.html" aria-label="My account">♙</a>
+                <a href="cart.html" aria-label="Shopping cart">
+                    ♧ <span id="cartCount">0</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation"
+                aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <main class="account-section">
+        <div class="container">
+
+            <div class="account-heading">
+                <p class="section-eyebrow">YOUR LUXECART</p>
+                <h1>My <em>account.</em></h1>
+                <p>Manage your profile and revisit your favorite finds.</p>
+            </div>
+
+            <div class="account-layout">
+
+                <aside class="account-sidebar">
+                    <div class="account-profile">
+                        <div class="account-avatar" id="accountAvatar">G</div>
+                        <h2 id="accountName">Guest Shopper</h2>
+                        <p id="accountEmail">Sign in to personalize your account.</p>
+                    </div>
+
+                    <nav class="account-nav" aria-label="Account navigation">
+                        <a href="#profile" class="active">My profile</a>
+                        <a href="#wishlist">My wishlist</a>
+                    </nav>
+
+                    <a href="login.html" class="account-signin-link" id="accountSigninLink">
+                        Sign in / Create account →
+                    </a>
+
+                    <button type="button" class="account-logout-btn" id="accountLogout" hidden>Sign out</button>
+                </aside>
+
+                <div class="account-content">
+
+                    <section class="account-panel" id="profile">
+                        <div class="account-panel-heading">
+                            <div>
+                                <p class="section-eyebrow">PERSONAL DETAILS</p>
+                                <h2>My profile</h2>
+                            </div>
+                        </div>
+
+                        <div id="accountStatus" class="auth-message" aria-live="polite"></div>
+
+                        <form id="accountProfileForm">
+                            <div class="auth-field">
+                                <label for="accountFullName">Full name</label>
+                                <input type="text" id="accountFullName" name="name" placeholder="Your full name"
+                                    autocomplete="name" required>
+                            </div>
+
+                            <div class="auth-field">
+                                <label for="accountProfileEmail">Email address</label>
+                                <input type="email" id="accountProfileEmail" name="email" placeholder="you@example.com"
+                                    autocomplete="email" required>
+                            </div>
+
+                            <button type="submit" class="auth-submit-btn">
+                                Save profile →
+                            </button>
+                        </form>
+
+                        <p class="auth-demo-note">
+                            This is a frontend demo. Profile details are stored in this browser only.
+                        </p>
+                    </section>
+
+                    <section class="account-panel" id="wishlist">
+                        <div class="account-panel-heading">
+                            <div>
+                                <p class="section-eyebrow">SAVED FOR LATER</p>
+                                <h2>My wishlist</h2>
+                            </div>
+                            <span class="account-wishlist-count" id="accountWishlistCount">0 items</span>
+                        </div>
+
+                        <div id="accountWishlistItems">
+                            <p class="account-empty-message">
+                                Your wishlist is waiting for something special.
+                                <a href="products.html">Explore the collection →</a>
+                            </p>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+            <p>© 2026 LuxeCart. A shopping experience demo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

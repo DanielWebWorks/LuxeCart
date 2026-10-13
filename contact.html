@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the LuxeCart team for help with your shopping experience.">
+    <title>Contact Us | LuxeCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over $100
+    </div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="index.html#categories">Categories</a>
+                <a href="index.html#new-arrivals">New Arrivals</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="account.html" aria-label="My account">♙</a>
+                <a href="cart.html" aria-label="Shopping cart">
+                    ♧ <span id="cartCount">0</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation"
+                aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <div class="container">
+
+            <div class="contact-heading">
+                <p class="section-eyebrow">WE'RE HERE TO HELP</p>
+                <h1>Let's start a <em>conversation.</em></h1>
+                <p>
+                    Have a question about a product or your shopping experience?
+                    Send us a message.
+                </p>
+            </div>
+
+            <div class="contact-layout">
+
+                <section class="contact-information">
+                    <p class="section-eyebrow">GET IN TOUCH</p>
+                    <h2>We'd love to hear from you.</h2>
+                    <p class="contact-information-description">
+                        Whether you need help choosing a product or have a general
+                        question, we're happy to help.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon">✉</span>
+                        <div>
+                            <h3>Email support</h3>
+                            <p>support@luxecart.example</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon">◷</span>
+                        <div>
+                            <h3>Support hours</h3>
+                            <p>Monday – Friday</p>
+                            <p>9:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-detail-icon">♡</span>
+                        <div>
+                            <h3>Our promise</h3>
+                            <p>A thoughtful shopping experience, every time.</p>
+                        </div>
+                    </div>
+
+                    <p class="contact-demo-note">
+                        This is a portfolio demo. The sample email address is not a real
+                        support inbox.
+                    </p>
+
+                    <a href="https://wa.me/2349164230308" class="whatsapp-button" target="_blank"
+                        rel="noopener noreferrer">
+                        Chat with us on WhatsApp →
+                    </a>
+                </section>
+
+                <section class="contact-form-card">
+                    <h2>Send us a message</h2>
+                    <p class="contact-form-description">
+                        Fill in the form below and we'll show you a demo confirmation.
+                    </p>
+
+                    <div id="contactMessage" class="contact-message" aria-live="polite"></div>
+
+                    <form id="contactForm">
+                        <div class="contact-fields-two">
+                            <div class="auth-field">
+                                <label for="contactName">Your name</label>
+                                <input type="text" id="contactName" name="name" placeholder="Full name"
+                                    autocomplete="name" required>
+                            </div>
+
+                            <div class="auth-field">
+                                <label for="contactEmail">Email address</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="you@example.com"
+                                    autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="auth-field">
+                            <label for="contactSubject">Subject</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Choose a subject</option>
+                                <option value="Product question">Product question</option>
+                                <option value="Order support">Order support</option>
+                                <option value="Shipping question">Shipping question</option>
+                                <option value="Returns">Returns and exchanges</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="auth-field">
+                            <label for="contactText">Your message</label>
+                            <textarea id="contactText" name="message" rows="5" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="auth-submit-btn">
+                            Send Message →
+                        </button>
+                    </form>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <a href="index.html" class="logo">LUXECART<span>.</span></a>
+            <p>© 2026 LuxeCart. A shopping experience demo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
